@@ -11,3 +11,16 @@ C:\Users\AndrewLum\Desktop\dining\dining\obj\Debug\dining.g.resources
 C:\Users\AndrewLum\Desktop\dining\dining\obj\Debug\dining.dll
 C:\Users\AndrewLum\Desktop\dining\dining\obj\Debug\dining.pdb
 C:\Users\AndrewLum\Desktop\dining\dining\obj\Debug\XapCacheFile.xml
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\Bin\Debug\ApplicationIcon.png
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\Bin\Debug\Background.png
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\Bin\Debug\dining.dll
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\Bin\Debug\dining.pdb
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\Bin\Debug\AppManifest.xaml
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\Bin\Debug\dining.xap
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\obj\Debug\App.g.i.cs
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\obj\Debug\MainPage.g.i.cs
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\obj\Debug\dining.g.resources
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\obj\Debug\dining.dll
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\obj\Debug\dining.pdb
+C:\Users\Matt\Documents\GitHub\dining-windows\dining\obj\Debug\XapCacheFile.xml
