@@ -13,6 +13,8 @@ using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
+
+
 namespace dining
 {
     public partial class App : Application
@@ -102,6 +104,19 @@ namespace dining
                 System.Diagnostics.Debugger.Break();
             }
         }
+
+
+        //Global Navigation Bar Events
+        private void navList_Click(object sender, EventArgs e)
+        {
+            (Application.Current.RootVisual as PhoneApplicationFrame).Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+        }
+
+        private void navMap_Click(object sender, EventArgs e)
+        {
+            (Application.Current.RootVisual as PhoneApplicationFrame).Navigate(new Uri("/Map.xaml", UriKind.Relative));
+        }
+
 
         #region Phone application initialization
 

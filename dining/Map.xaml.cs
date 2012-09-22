@@ -13,13 +13,11 @@ using Microsoft.Phone.Controls;
 
 namespace dining
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class Map : PhoneApplicationPage
     {
-        // Constructor
-        public MainPage()
+        public Map()
         {
             InitializeComponent();
         }
-        
     }
 }

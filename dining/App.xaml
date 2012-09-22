@@ -7,6 +7,16 @@
 
     <!--Application Resources-->
     <Application.Resources>
+        <shell:ApplicationBar x:Key="GlobalAppBar" IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="List" Click ="navList_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Map" Click= "navMap_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Something"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Something else"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>
@@ -15,5 +25,7 @@
             Launching="Application_Launching" Closing="Application_Closing" 
             Activated="Application_Activated" Deactivated="Application_Deactivated"/>
     </Application.ApplicationLifetimeObjects>
+
+    
 
 </Application>
