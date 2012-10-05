@@ -1,0 +1,17 @@
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\Bin\Debug\ApplicationIcon.png
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\Bin\Debug\Background.png
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\Bin\Debug\Windows Dining.dll
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\Bin\Debug\Windows Dining.pdb
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\Bin\Debug\AppManifest.xaml
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\Bin\Debug\Windows_Dining.xap
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\obj\Debug\App.g.i.cs
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\obj\Debug\MainPage.g.i.cs
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\obj\Debug\Windows Dining.g.resources
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\obj\Debug\Windows Dining.dll
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\obj\Debug\Windows Dining.pdb
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\obj\Debug\XapCacheFile.xml
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\Bin\Debug\ViewModels\dining.sdf
+C:\Users\AndrewLum\Desktop\Windows Dining\Windows Dining\obj\Debug\DiningDetail.g.i.cs
