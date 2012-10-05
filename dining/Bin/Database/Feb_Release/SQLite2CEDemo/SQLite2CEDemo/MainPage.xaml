@@ -1,0 +1,109 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="SQLite2CEDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768" 
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="12,0,12,0">
+        <!--Pivot Control-->
+        <controls:Pivot Title="SQLite2CE - Countries Database Demo">
+            
+            <!--Pivot item one-->
+            <controls:PivotItem Header="Country">
+                <!--CountryListBox is bound to the MainViewModel's countryData object. The DataTemplate below links the countryData object's
+                properties to the TextBlock objects within. The DataTemplate items will be replecated as many times as there are
+                entries within countryData.-->
+                <ListBox x:Name="CountryListBox" ItemsSource="{Binding Path=countryData}" Tap="CountryListBox_Tap">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Path=Name}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                <TextBlock Text="{Binding Path=Area, StringFormat='Area: {0}'}" TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Path=Population, StringFormat='Pop: {0}'}" TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Path=Url, StringFormat='Web: {0}'}" TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </controls:PivotItem>
+
+            <!--Pivot item two-->
+            <controls:PivotItem Header="City">
+                <!--CityListBox is bound to the MainViewModel's cityData object. The DataTemplate below links the cityData object's
+                properties to the TextBlock objects within. The DataTemplate items will be replecated as many times as there are
+                entries within cityData.-->
+                <ListBox x:Name="CityListBox" ItemsSource="{Binding Path=cityData}" Tap="CityListBox_Tap">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock x:Name="txbCityName" Text="{Binding Path=Name}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                <TextBlock Text="{Binding Path=Population, StringFormat='Pop: {0}'}" TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Path=IsCapital, StringFormat='Capital: {0}'}" TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Path=CountryId, StringFormat='Country: {0}'}" TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </controls:PivotItem>
+
+            <!--Pivot item three-->
+            <controls:PivotItem Header="Capitals (view)">
+                <!--CapitalsListBox is bound to the MainViewModel's countryCapitals object. The DataTemplate below links the countryCapitals
+                object's properties to the TextBlock objects within. The DataTemplate items will be replecated as many times as there are
+                entries within countryCapitals.-->
+                <ListBox x:Name="CapitalsListBox" ItemsSource="{Binding Path=countryCapitals}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Path=Name}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                <TextBlock Text="{Binding Path=CityName, StringFormat='Capital: {0}'}" TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </controls:PivotItem>
+            
+            <!--Pivot item four-->
+            <controls:PivotItem Header="Pop. (view)">
+                <!--PopulationListBox is bound to the MainViewModel's countryPopulation object. The DataTemplate below links the
+                countryPopulation object's properties to the TextBlock objects within. The DataTemplate items will be replecated
+                as many times as there are entries within countryPopulation.-->
+                <ListBox x:Name="PopulationListBox" ItemsSource="{Binding Path=countryPopulation}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Path=countryName}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                <TextBlock Text="{Binding Path=countryPopulation, StringFormat='Pop: {0}'}" TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </controls:PivotItem>
+            
+        </controls:Pivot>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

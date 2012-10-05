@@ -1,8 +1,10 @@
-﻿<xapCache source="C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\Bin\Debug\dining.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="9/22/2012 2:18:16 PM">
+﻿<xapCache source="C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\Bin\Debug\dining.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="10/4/2012 7:13:01 PM">
   <file source="C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="9/20/2012 8:58:09 PM" />
   <file source="C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\Background.png" archivePath="Background.png" lastWriteTime="9/20/2012 8:58:09 PM" />
   <file source="C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="9/20/2012 8:58:09 PM" />
-  <file source="C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\obj\Debug\dining.dll" archivePath="dining.dll" lastWriteTime="9/22/2012 2:18:15 PM" />
+  <file source="C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\obj\Debug\dining.dll" archivePath="dining.dll" lastWriteTime="10/4/2012 7:13:00 PM" />
+  <file source="C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\dining.sdf" archivePath="dining.sdf" lastWriteTime="10/4/2012 4:31:59 PM" />
   <file source="C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="9/20/2012 8:58:10 PM" />
   <file source="C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="9/22/2012 2:18:16 PM" />
+  <file source="C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\Bin\Debug\dining.sdf" archivePath="dining.sdf" lastWriteTime="10/4/2012 4:31:59 PM" />
 </xapCache>

@@ -38,3 +38,4 @@ C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\obj\Debug\dining.pdb
 C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\Bin\Debug\AppManifest.xaml
 C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\Bin\Debug\dining.xap
 C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\obj\Debug\XapCacheFile.xml
+C:\Users\AndrewLum\Documents\GitHub\dining-windows\dining\Bin\Debug\dining.sdf
