@@ -33,5 +33,16 @@ namespace VanderbiltDining
                 App.ViewModel.LoadData();
             }
         }
+
+        private void SecondListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void RestaurantListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string selectedName = App.ViewModel.Items.ElementAt(RestaurantListBox.SelectedIndex).LineOne;
+            NavigationService.Navigate(new Uri("/DiningDetail.xaml?name=" + selectedName, UriKind.Relative));
+        }
     }
 }

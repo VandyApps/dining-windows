@@ -20,14 +20,14 @@
         <!--Pivot Control-->
         <controls:Pivot Title="Vanderbilt Dining">
             <!--Pivot item one-->
-            <controls:PivotItem Header="Restaurants">
+            <controls:PivotItem Header="Restaurants" Name="restaurauntPivot">
                 <!--Double line list with text wrapping-->
-                <ListBox x:Name="RestaurantListBox" Margin="0,0,-12,0" ItemsSource="{Binding Items}">
+                <ListBox x:Name="RestaurantListBox" Margin="0,0,-12,0" ItemsSource="{Binding Items}" SelectionChanged="RestaurantListBox_SelectionChanged">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                           <StackPanel Margin="0,0,0,17" Width="432" Height="78">
-                              <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                              <TextBlock Text="{Binding OnCard}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                              <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                              <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                           </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -37,7 +37,7 @@
             <!--Pivot item two-->
             <controls:PivotItem Header="Maps"> 
                 <!--Triple line list no text wrapping-->
-                    <ListBox x:Name="SecondListBox" Margin="0,0,-12,0" ItemsSource="{Binding Items}">
+                    <ListBox x:Name="SecondListBox" Margin="0,0,-12,0" ItemsSource="{Binding Items}" SelectionChanged="SecondListBox_SelectionChanged">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Margin="0,0,0,17">
