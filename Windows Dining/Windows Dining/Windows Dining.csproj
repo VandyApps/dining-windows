@@ -103,6 +103,7 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="vandy.png" />
     <Content Include="ViewModels\dining.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
