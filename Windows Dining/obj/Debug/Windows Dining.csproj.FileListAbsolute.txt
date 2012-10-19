@@ -52,3 +52,23 @@ C:\Users\Ryan Gibbons\Documents\GitHub\dining-windows\Windows Dining\Windows Din
 C:\Users\Ryan Gibbons\Documents\GitHub\dining-windows\Windows Dining\Windows Dining\obj\Debug\Windows Dining.pdb
 C:\Users\Ryan Gibbons\Documents\GitHub\dining-windows\Windows Dining\Windows Dining\obj\Debug\XapCacheFile.xml
 C:\Users\Ryan Gibbons\Documents\GitHub\dining-windows\Windows Dining\Windows Dining\obj\Debug\MapDetail.g.i.cs
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\ApplicationIcon.png
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\Background.png
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\ViewModels\dining.sdf
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\Windows Dining.dll
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\Windows Dining.pdb
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\AppManifest.xaml
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\Windows_Dining.xap
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\App.g.i.cs
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\DiningDetail.g.i.cs
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\MainPage.g.i.cs
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\MapDetail.g.i.cs
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\Windows Dining.g.resources
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\Windows Dining.dll
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\Windows Dining.pdb
+C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\XapCacheFile.xml
