@@ -22,7 +22,7 @@ namespace Windows_Dining
         {
             InitializeComponent();
 
-            // Set the data context of the listbox control to the sample data
+            // Set the data context of the listbox control to the Dining Data
             DataContext = App.ViewModel;
             this.Loaded += new RoutedEventHandler(MainPage_Loaded);
         }
@@ -41,5 +41,14 @@ namespace Windows_Dining
             string selectedName = App.ViewModel.Items.ElementAt(RestaurantListBox.SelectedIndex).LineOne;
             NavigationService.Navigate(new Uri("/DiningDetail.xaml?name=" + selectedName, UriKind.Relative));
         }
+
+        private void GoToMap_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MapDetail.xaml", UriKind.Relative));
+        }
+
+        
+
+        
     }
 }

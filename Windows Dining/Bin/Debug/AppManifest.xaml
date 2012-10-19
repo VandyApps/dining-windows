@@ -2,5 +2,6 @@
   <Deployment.Parts>
     <AssemblyPart x:Name="Windows Dining" Source="Windows Dining.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Maps" Source="Microsoft.Phone.Controls.Maps.dll" />
   </Deployment.Parts>
 </Deployment>
