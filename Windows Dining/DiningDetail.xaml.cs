@@ -19,9 +19,9 @@ using System.IO;
 using System.IO.IsolatedStorage;
 
 
-namespace VanderbiltDining
+namespace Windows_Dining
 {
-    public class DBHelper
+    /*public class DBHelper
     {
         private const string ConnectionString = "isostore:/dining.sdf";
 
@@ -84,7 +84,7 @@ namespace VanderbiltDining
             }
         }
     }
-
+    */
     public partial class DiningDetail : PhoneApplicationPage
     {
         public DiningDetail()
