@@ -95,7 +95,27 @@ namespace Windows_Dining
         {
             
             IList<Dining1> restaurants = DBHelper.GetRestaurants();           // Access Dining1 Database
-            float[,] latLongArray = new float[restaurants.Count(), 2];    // Create 2 dimensional array to hold latitude and longitude data
+            //float[,] latLongArray = new float[restaurants.Count(), 2];    // Create 2 dimensional array to hold latitude and longitude data
+            /*Temporary Solution For GeoCoordinate Array.*/
+            double[,] latLongArray = {
+                                        {36.146405, -86.803178}, //1
+                                        {36.141951, -86.797127},
+                                        {36.141771, -86.79694},
+                                        {36.146321, -86.803037},
+                                        {36.146545, -86.803471}, //5
+                                        {36.146626, -86.803736},
+                                        {36.147418, -86.806839},
+                                        {36.147461, -86.806705},
+                                        {36.140584, -86.806286},
+                                        {36.144847, -86.805728}, //10
+                                        {36.145718, -86.800529},
+                                        {36.144785, -86.806399},
+                                        {36.129392, -86.778613},
+                                        {36.144801, -86.802836}
+                                    
+            
+                                    };
+
             Pushpin[] restaurantLocations = new Pushpin[restaurants.Count()];   // Create array to hold pushpins
             MapLayer[] pushpinLayers = new MapLayer[restaurants.Count()];           
 
@@ -106,11 +126,11 @@ namespace Windows_Dining
                 }
             
 
-            for (int row = 0; row < restaurants.Count(); row++)
+            for (int row = 0; row < 14/*(14 is number in test array) restaurants.Count()*/; row++)
                 {
-                    //Debug.WriteLine("{0},{1}", restaurants[row].Lat, restaurants[row].Long);
-                    latLongArray[row, 0] = (float) restaurants[row].Lat;
-                    latLongArray[row, 1] = (float) restaurants[row].Long;
+                    //Debug.WriteLine("id: {0} {1},{2}", restaurants[row].Unique_id, restaurants[row].Lat, restaurants[row].Long);
+                    latLongArray[row, 0] = latLongArray[row, 0];//(float) restaurants[row].Lat;
+                    latLongArray[row, 1] = latLongArray[row, 1];//(float) restaurants[row].Long;
   
 
                     
