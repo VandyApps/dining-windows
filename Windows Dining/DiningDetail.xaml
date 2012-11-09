@@ -22,14 +22,15 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="PageTitle" Text="title" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="PageTitle" Text="title" Foreground="White" Height="Auto"  Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" TextWrapping="Wrap"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock Name="Description" Height="Auto" HorizontalAlignment="Left" Text="TextBlock" VerticalAlignment="Top" Width="450" TextWrapping="Wrap" />
-            <TextBlock Name="Website" Height="Auto" TextWrapping="Wrap" />
-            <TextBlock Name="Hours" Height="Auto" HorizontalAlignment="Left" Text="TextBlock" VerticalAlignment="Top" Width="441" />
+            <Image Name="TopImage" Source="foodmural.jpg" Stretch="None" Height="227" Width="470" />
+            <TextBlock Name="Description" Foreground="White" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Top" Width="450" TextWrapping="Wrap"/>
+            <HyperlinkButton Name="Website" Foreground="White" Content="Website" Height="Auto" TargetName="_blank"/>
+            <TextBlock Name="Hours" Height="Auto" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Width="441" />
         </StackPanel>
     </Grid>
  

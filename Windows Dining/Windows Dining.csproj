@@ -115,6 +115,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Resource Include="vandy.png" />
+    <Resource Include="foodmural.jpg" />
+    <Resource Include="vandy2.png" />
     <Content Include="ViewModels\dining.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

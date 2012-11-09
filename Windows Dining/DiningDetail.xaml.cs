@@ -21,70 +21,6 @@ using System.IO.IsolatedStorage;
 
 namespace Windows_Dining
 {
-    /*public class DBHelper
-    {
-        private const string ConnectionString = "isostore:/dining.sdf";
-
-        public static void CreateDatabase()
-        {
-            using (var context = new Dining(ConnectionString))
-            {
-                if (!context.DatabaseExists())
-                {
-                    // create database if it does not exist
-                    context.CreateDatabase();
-                }
-            }
-        }
-
-        public static void DeleteDatabase()
-        {
-            using (var context = new Dining(ConnectionString))
-            {
-                if (context.DatabaseExists())
-                {
-                    // delete database if it exist
-                    context.DeleteDatabase();
-                }
-            }
-        }
-
-        public static IList<Dining1> GetRestaurants()
-        {
-            IList<Dining1> restaurants;
-            using (var context = new Dining(ConnectionString))
-            {
-                restaurants = (from Dining1 d in context.Restaurants select d).ToList();
-            }
-
-            return restaurants;
-        }
-
-        public static void MoveReferenceDatabase()
-        {
-            // Obtain the virtual store for the application.
-            IsolatedStorageFile iso = IsolatedStorageFile.GetUserStoreForApplication();
-
-            // Create a stream for the file in the installation folder.
-            using (Stream input = Application.GetResourceStream(new Uri("ViewModels/dining.sdf", UriKind.Relative)).Stream)
-            {
-                // Create a stream for the new file in isolated storage.
-                using (IsolatedStorageFileStream output = iso.CreateFile("dining.sdf"))
-                {
-                    // Initialize the buffer.
-                    byte[] readBuffer = new byte[4096];
-                    int bytesRead = -1;
-
-                    // Copy the file from the installation folder to isolated storage. 
-                    while ((bytesRead = input.Read(readBuffer, 0, readBuffer.Length)) > 0)
-                    {
-                        output.Write(readBuffer, 0, bytesRead);
-                    }
-                }
-            }
-        }
-    }
-    */
     public partial class DiningDetail : PhoneApplicationPage
     {
         public DiningDetail()
@@ -104,40 +40,60 @@ namespace Windows_Dining
 
             if (NavigationContext.QueryString.TryGetValue("name", out name))
             {
+                //Decreases fontsize if the name is too long
+                if (name.Length > 12)
+                {
+                    PageTitle.FontSize -= 10;
+                }
+
                 PageTitle.Text = name;
+
                 for (int i = 0; i < restaurants.Count(); i++)
                 {
                     if (restaurants[i].Name.Equals(name))
                     {
+                        //Sets description
                         Description.Text = restaurants[i].Description;
-                        Website.Text = "Website: " + restaurants[i].Url;
+
+                        //Sets website url if it exists
+                        if (restaurants[i].Url.Length > 7)
+                        {
+                            Uri websiteUri = new Uri(restaurants[i].Url);
+                            Website.NavigateUri = websiteUri;
+                        }
+                        else
+                        {
+                            Website.Content = "Website not available.";
+                        }
+
+                        //Finds day of the week, and sets hours textbox accordingly
                         if ((int)DateTime.Today.DayOfWeek == 0)
                         {
-                            Hours.Text = "Sunday Hours: " + restaurants[i].Sunday_hours;
+                            Hours.Text = "Sunday Hours: " + restaurants[i].Sunday_hours.Replace(",", "-");
                         }
-                        if ((int)DateTime.Today.DayOfWeek == 1)
+                        else if ((int)DateTime.Today.DayOfWeek == 1)
                         {
-                            Hours.Text = "Monday Hours: " + restaurants[i].Monday_hours;
+                            Hours.Text = "Monday Hours: " + restaurants[i].Monday_hours.Replace(",", "-");
                         }
-                        if ((int)DateTime.Today.DayOfWeek == 2)
+                        else if ((int)DateTime.Today.DayOfWeek == 2)
                         {
-                            Hours.Text = "Tuesday Hours: " + restaurants[i].Tuesday_hours;
+                            Hours.Text = "Tuesday Hours: " + restaurants[i].Tuesday_hours.Replace(",", "-");
                         }
-                        if ((int)DateTime.Today.DayOfWeek == 3)
+                        else if ((int)DateTime.Today.DayOfWeek == 3)
                         {
-                            Hours.Text = "Wednesday Hours: " + restaurants[i].Wednesday_hours;
+                            Hours.Text = "Wednesday Hours: " + restaurants[i].Wednesday_hours.Replace(",", "-");
                         }
-                        if ((int)DateTime.Today.DayOfWeek == 4)
+                        else if ((int)DateTime.Today.DayOfWeek == 4)
                         {
-                            Hours.Text = "Thursday Hours: " + restaurants[i].Thursday_hours;
+                            Hours.Text = "Thursday Hours: " + restaurants[i].Thursday_hours.Replace(",", "-");
                         }
-                        if ((int)DateTime.Today.DayOfWeek == 5)
+                        else if ((int)DateTime.Today.DayOfWeek == 5)
                         {
-                            Hours.Text = "Friday Hours: " + restaurants[i].Friday_hours;
+                            Hours.Text = "Friday Hours: " + restaurants[i].Friday_hours.Replace(",", "-");
                         }
-                        if ((int)DateTime.Today.DayOfWeek == 6)
+                        else if ((int)DateTime.Today.DayOfWeek == 6)
                         {
-                            Hours.Text = "Saturday Hours: " + restaurants[i].Saturday_hours;
+                            Hours.Text = "Saturday Hours: " + restaurants[i].Saturday_hours.Replace(",", "-");
                         }
                     }
                 }

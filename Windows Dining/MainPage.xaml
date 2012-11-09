@@ -21,7 +21,7 @@
         <!--Panorama control-->
         <controls:Panorama Title="Vanderbilt Dining">
             <controls:Panorama.Background>
-                <ImageBrush ImageSource="vandy.png"/>
+                <ImageBrush ImageSource="vandy2.png" Stretch="UniformToFill"/>
             </controls:Panorama.Background>
 
             <!--Panorama item one-->
