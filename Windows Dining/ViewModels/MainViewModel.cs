@@ -128,7 +128,6 @@ namespace Windows_Dining
             private set;
         }
 
-
         /// <summary>
         /// Creates and adds a few ItemViewModel objects into the Items collection.
         /// </summary>
@@ -138,9 +137,32 @@ namespace Windows_Dining
             DBHelper.MoveReferenceDatabase();
             IList<Dining1> restaurants = DBHelper.GetRestaurants();
 
+            String[] names = new String[restaurants.Count()];
+
             for (int i = 0; i < restaurants.Count(); i++)
             {
-                this.Items.Add(new ItemViewModel() { LineOne = restaurants[i].Name, LineTwo = restaurants[i].Type });
+                names[i] = restaurants[i].Name;
+            }
+
+            Array.Sort(names);
+
+            List<Dining1> restaurantsSorted = new List<Dining1>(restaurants.Count());
+
+            for (int i = 0; i < names.Length; i++)
+            {
+                for (int j = 0; j < restaurants.Count(); j++)
+                {
+                    if(restaurants[j].Name.Equals(names[i]))
+                    {
+                        restaurantsSorted.Add(restaurants[j]);
+                    }
+                }
+            }
+
+
+            for (int i = 0; i < restaurantsSorted.Count(); i++)
+            {
+                this.Items.Add(new ItemViewModel() { LineOne = restaurantsSorted[i].Name, LineTwo = restaurantsSorted[i].Type });
             }
           
             this.IsDataLoaded = true;

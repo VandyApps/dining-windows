@@ -63,7 +63,6 @@ C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\Microsoft
 C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
 C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\Microsoft.Phone.Controls.xml
 C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
-C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\App.g.i.cs
 C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\DiningDetail.g.i.cs
 C:\Users\Matt\Documents\GitHub\dining-windows\Windows Dining\obj\Debug\MainPage.g.i.cs
